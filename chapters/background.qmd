@@ -1,0 +1,10 @@
+# Background
+
+## Supervised Learning for classification
+
+The goal of classification is to use some data $X$ alongside a function $f_m$ (model) to accurately represent a discrete categorization $y$: 
+$$
+f_m(X, \theta) = \widehat{y} \approx y
+$$
+
+![Cat general architecture](../img/cat.jpg){#fig-cat}

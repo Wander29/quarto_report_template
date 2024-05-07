@@ -1,0 +1,54 @@
+project:
+  type: book
+  output-dir: build
+lang: en
+book:
+  title: ""
+  author:
+    - name: Ludovico Venturi
+      email: ludovico.venturi@edu.unifi.it
+      affiliations: 
+        - name: Università degli studi di Firenze
+  chapters:
+    - index.qmd
+    - chapters/background.qmd
+    - chapters/methods.qmd
+    - chapters/results.qmd
+    - chapters/references.qmd
+
+toc: true
+number-sections: true
+number-depth: 2
+csl: /home/ludovicowan/Dev/dev-tools/csl/statistical-science.csl
+bibliography: references.bib
+latex-output-dir: build
+keep-tex: true
+# pdf-engine: tectonic
+format:
+  html:
+    code-fold: false
+    theme: litera
+    code-summary: "Show the code"
+    code-tools: true
+    html-math-method: mathjax
+    execute:
+      cache: true
+  pdf:
+    output-file: "output_file_name"
+    output-ext:  "pdf"
+    documentclass: scrreprt
+    link-citations: true
+    geometry:
+      - top=20mm
+      - left=20mm
+    papersize: a4
+    colorlinks: true
+    # linestretch: 1.1
+    fontsize: 13pt
+    execute:
+      cache: true
+    include-in-header:
+      - "utils/in-header.tex"
+    include-before-body:
+      - "utils/before-body.tex"
+
